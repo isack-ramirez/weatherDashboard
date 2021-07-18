@@ -11,6 +11,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
     integrity="undefined" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
@@ -19,20 +22,56 @@
 </head>
 
 <body>
-  
-<div class ="row"id="searchNav">
-  <nav class="navbar navbar-dark bg-dark justify-content-center">
-    <a class="navbar-brand">Navbar</a>
-    <form class="form-group">
-      <input class="form-group mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button id="searchButton" class="form-float btn btn-outline-success my-2 my-sm-0 justify-content-center" type="">Search</button>
-    </form>
+
+  <!----                        -NAVBAR DIV                   -->
+
+
+  <div class="row" id="searchNav">
+    <nav class="navbar navbar-dark bg-dark justify-content-center">
+      <a class="navbar-brand">Search for a city!</a>
+      <form class="form-group">
+        <input id="searchBar" class="form-group mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button id="searchButton" class="form-float btn btn-outline-success my-2 my-sm-0 justify-content-center"
+          type="">Search</button>
+      </form>
+    </nav>
+  </div>
+
+
+  <!--Search history navbar  -->
+
+
+  <nav class="py-2 bg-light border-bottom">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item" id="prevSearches"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Previous
+            searches:</a></li>
+
+      </ul>
+    </div>
   </nav>
-</div>
+
+
+  <!-- Day cards  -->
+  <div id="weekdays" class="row p-5">
+
+    <div class="row justify-content-center">
+      <!-- 
+    <div id="monday" class="card" style=" width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title"> This City</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Monday</h6>
+      
+      </div>
+    </div> -->
+
+
+    </div>
 
 
 
-  <script src="./assets/js/script.js"></script>
+
+    <script src="./assets/js/script.js"></script>
 
 </body>
 
